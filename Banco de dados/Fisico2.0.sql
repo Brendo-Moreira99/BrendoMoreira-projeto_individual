@@ -1,23 +1,21 @@
--- GeraÁ„o de Modelo fÌsico
+-- Gera√ß√£o de Modelo f√≠sico
 -- Sql ANSI 2003 - brModelo.
 
-
-
 CREATE TABLE Usuario (
-id_Usuario INTEGER PRIMARY KEY,
+id_Usuario INTEGER PRIMARY KEY AUTO_INCREMENT,
 Id_Permissao INTEGER,
 Id_Cliente INTEGER,
 Senha VARCHAR(15),
 Email VARCHAR(30)
-)
+);
 
-CREATE TABLE Permiss„o (
+CREATE TABLE Permiss√£o (
 Id_Permissao INTEGER PRIMARY KEY,
 Tipo VARCHAR(15)
-)
+);
 
 CREATE TABLE Cliente (
-Id_Cliente INTEGER PRIMARY KEY,
+Id_Cliente INTEGER PRIMARY KEY AUTO_INCREMENT,
 Rua  VARCHAR(30),
 Bairro VARCHAR(30),
 Data_Cli VARCHAR(30),
@@ -28,40 +26,40 @@ Telefone VARCHAR(20),
 Cep VARCHAR(10),
 Cpf VARCHAR(15),
 Nome VARCHAR(50)
-)
+);
 
 CREATE TABLE Reserva (
-Id_Reserva INTEGER PRIMARY KEY,
+Id_Reserva INTEGER PRIMARY KEY AUTO_INCREMENT,
 id_Usuario INTEGER,
 Valor_total DOUBLE(10,2),
 Pagamento VARCHAR(30),
 FOREIGN KEY(id_Usuario) REFERENCES Usuario (id_Usuario)
-)
+);
 
 CREATE TABLE Itens_Compra (
-Id_itensCompra INTEGER PRIMARY KEY,
+Id_itensCompra INTEGER PRIMARY KEY AUTO_INCREMENT,
 Id_Itens_Pacote INTEGER,
 Id_Reserva INTEGER,
 Id_Voo INTEGER,
 Valor_Itens DOUBLE(10,2),
 Quantidade INTEGER,
 FOREIGN KEY(Id_Reserva) REFERENCES Reserva (Id_Reserva)
-)
+);
 
 CREATE TABLE Voo (
-Id_Voo INTEGER PRIMARY KEY,
+Id_Voo INTEGER PRIMARY KEY AUTO_INCREMENT,
 Local_Partida VARCHAR(40),
 Quantidade_Pessoas INTEGER,
 Destino_voo VARCHAR(40),
 Transfer VARCHAR(10),
 Data_volta DATETIME,
 Data_ida DATETIME,
-Valor_viagem DOUBLE(10,2),
+Valor_viagem DOUBLE(10,2)
 
-)
+);
 
 CREATE TABLE DiariasHotelaria (
-Id_Hotel INTEGER PRIMARY KEY,
+Id_Hotel INTEGER PRIMARY KEY AUTO_INCREMENT,
 Qtd_dias INTEGER,
 Rua VARCHAR(40),
 Numero INTEGER,
@@ -70,10 +68,10 @@ Estado VARCHAR(40),
 Municipio VARCHAR(40),
 Nome_Hotel VARCHAR(40),
 Qtd_Quartos INTEGER
-)
+);
 
 CREATE TABLE Pacote (
-Id_Itens_Pacote INTEGER PRIMARY KEY,
+Id_Itens_Pacote INTEGER PRIMARY KEY AUTO_INCREMENT,
 Id_Hotel INTEGER,
 Valor_Pacote DOUBLE(10,2),
 Qtd_Pessoas_Pac INTEGER,
@@ -82,13 +80,13 @@ Pacote_ida DATETIME,
 Pacote_volta DATETIME,
 Destino VARCHAR(30),
 Transfer_pacote VARCHAR(20),
-FOREIGN KEY(Id_Hotel) REFERENCES Diarias+Hotelaria (Id_Hotel)
-)
+FOREIGN KEY(Id_Hotel) REFERENCES DiariasHotelaria (Id_Hotel)
+);
 
-ALTER TABLE Usuario ADD FOREIGN KEY(Id_Permissao) REFERENCES Permiss„o (Id_Permissao)
-ALTER TABLE Usuario ADD FOREIGN KEY(Id_Cliente) REFERENCES Cliente (Id_Cliente)
-ALTER TABLE Itens_Compra ADD FOREIGN KEY(Id_Itens_Pacote) REFERENCES Pacote (Id_Itens_Pacote)
-ALTER TABLE Itens_Compra ADD FOREIGN KEY(Id_Voo) REFERENCES Voo (Id_Voo)
+ALTER TABLE Usuario ADD FOREIGN KEY(Id_Permissao) REFERENCES Permiss√£o (Id_Permissao);
+ALTER TABLE Usuario ADD FOREIGN KEY(Id_Cliente) REFERENCES Cliente (Id_Cliente);
+ALTER TABLE Itens_Compra ADD FOREIGN KEY(Id_Itens_Pacote) REFERENCES Pacote (Id_Itens_Pacote);
+ALTER TABLE Itens_Compra ADD FOREIGN KEY(Id_Voo) REFERENCES Voo (Id_Voo);
 
 create view Itens_geral1 as SELECT i.Id_itensCompra, i.Id_Itens_Pacote, i.Id_Reserva, i.id_Voo, i.Valor_Itens, i.Quantidade, p.Id_Hotel, p.Valor_Pacote, p.Qtd_Pessoas_Pac, p.tipo,p.Pacote_ida,p.Pacote_volta,p.Destino,p.transfer_pacote, r.id_Usuario, r.Valor_total, r.pagamento, v.quantidade_pessoas,v.destino_voo, v.Data_ida, v.Data_volta, v.transfer  FROM itens_compra i, pacote p, reserva r, 
 voo v where i.Id_Itens_Pacote = p.Id_Itens_Pacote and i.Id_Reserva = r.Id_Reserva and i.Id_Voo = v.Id_Voo;
