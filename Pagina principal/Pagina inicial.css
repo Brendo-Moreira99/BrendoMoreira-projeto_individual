@@ -1,0 +1,48 @@
+.backg_principal {
+	background-image: repeating-conic-gradient(from 30deg, #0f9e57 10% 60deg, #2e7602 60%
+		120deg);
+	background-size: 44px 76px;
+	background-color: #2e7602;
+}
+
+.espaço {
+	height: 100px;
+	background-color: #95d0b8;
+	opacity: 0.96;
+}
+
+.border {
+	border-bottom: 1px solid black;
+}
+
+.efeito {
+	color: orange;
+	text-decoration: none;
+}
+
+.efeito:hover {
+	background-color: #95d0b8;
+	transition: 1s;
+	font-weight: bolder;
+	color: black;
+	opacity: 1;
+}
+
+.jubotron {
+	background-color: #95d0b8;
+}
+
+.fundo_carrosel {
+	background-color: #95d0b8;
+	background-image: image();
+	background-repeat: round
+}
+
+.divserv:hover {
+	border: 2px solid orange;
+}
+
+Footer {
+	color: orange;
+	min-height: 140px;
+}
