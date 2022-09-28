@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novos Ares - Destinos</title>
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" href="Destnos.css">
+</head>
+
+<body>
+	<section class="backg_principal">
+
+
+
+		<!-- Inicio da navbar -->
+		<header class="container-fluid">
+
+			<nav class="navbar navbar-expand-lg bg-dark rounded-1 fixed-top">
+				<div class="container-fluid ">
+					<a class="navbar-brand border-end " href="#"><img
+						class="img-fluid" src="./imagens usadas/Logo.png"
+						style="height: 95px; width: 100%;" alt="" srcset=""> <br>
+
+					</a>
+
+					<button class="navbar-toggler navbar-dark" type="button"
+						data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse align-content-end"
+						id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link active efeito"
+								aria-current="page"
+								href="../Pagina principal/Página inicial.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link efeito"
+								href="Destinos.html">Destinos</a></li>
+							<li class="nav-item dropdown "><a
+								class="nav-link dropdown-toggle efeito " href="#"
+								id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false"> Promoções </a>
+								<ul class="dropdown-menu bg-dark"
+									aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item efeito "
+										href="../Pagina_promo_casal/Paginacasais.html">Para Casais</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item efeito"
+										href="../Pagina_promo_familia/Paginafamilia.html">Para
+											Famílias</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item efeito"
+										href="../Pagina_promo_solteiros/Pagina_promo_solt.html">Para
+											Solteiros</a></li>
+								</ul></li>
+							<li class="nav-item"><a class="nav-link efeito"
+								href="../Pagina de contato/Pagina_contato.html" tabindex="-1"
+								aria-disabled="true">Contato</a></li>
+						</ul>
+						<form class="d-flex">
+							<input class="form-control me-4 w-75" type="search"
+								placeholder="Procurar no site" aria-label="Procurar">
+							<button class="btn btn-outline-success btn-sm m-1" type="submit">Buscar</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+			<!-- Fim da Navbar -->
+			<div style="height: 100px;"></div>
+		</header>
+
+
+
+		<!-- Inicio da primeira parte principal do site -->
+		<main class=" mt-0 bg-gradient backg_secundario ">
+
+			<div style="height: 20px;"></div>
+
+
+
+
+			<!-- background abaixo do navbar e pesquisa dos destinos-->
+
+			<div class=" row backg_imag">
+				<div class="col-1 "></div>
+
+
+
+				<div class="col-10">
+
+
+					<div class="row  mt-4 input-group-text"
+						style="background-color: white;">
+
+
+						<div class="col-lg-4 col-md-4 col-sm-12 ">
+							<b><label for="Destino" class="form-label">Destino </label></b>
+							<div class="input-group">
+								<span class="input-group-text" style="color: white"><img
+									src="imagens usadas/kisspng-gps.jpg"
+									class="img-fluid" style="height: 25px; width: 100%;" alt=""
+									srcset=""></span><input type="email" class="form-control"
+									id="Destino" aria-describedby="destino"
+									placeholder="Busque pelo destino">
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-12">
+							<b><label for="exampleInputEmail1" class="form-label">Período</label></b>
+							<div class="input-group">
+								<span class="input-group-text">Ida</span><input type="tel"
+									class="form-control" id="exampleInputEmail1"
+									aria-describedby="emailHelp" placeholder="d/m/a"><span
+									class="input-group-text">Volta</span><input type="tel"
+									class="form-control" id="exampleInputEmail1"
+									aria-describedby="emailHelp" placeholder="d/m/a">
+							</div>
+
+
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-12">
+							<b><label for="exampleInputEmail1" class="form-label">Pessoas</label></b>
+							<div class="input-group">
+								<span class="input-group-text"><img class="img-fluid"
+									style="height: 25px; max-width: 100%;"
+									src="imagens usadas/png-transparent-computer-icons-person-user-spark-icon-people-share-icon-user.png"
+									alt=""></span><input type="tel" class="form-control"
+									id="exampleInputEmail1" aria-describedby="emailHelp">
+							</div>
+
+						</div>
+						<div class="col-lg-2 col-md-12 col-sm-12 mt-lg-0 mt-md-1 mt-sm-2 ">
+							<button class="btn btn-lg border-dark btn-primary ">
+								<b>Buscar</b>
+							</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-1"></div>
+			</div>
+
+			<!--  Fim do background abaixo do navbar e da pesquisa dos destinos-->
+
+
+			<!-- inicio Parte dos destinos internacionais-->
+			<div class="container ">
+
+
+
+
+				<div class="container p-2" style="background-color: #95d0b8">
+
+					<div class="row justify-content-around">
+
+						<h2>
+							Destinos nacionais
+							<hr>
+						</h2>
+
+						<b>
+							<p align="center">Explore o território brasileiro e conheça
+								as maravilhas que temos em nosso país.</p>
+						</b>
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/Sao-Paulo-467-banner-1.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">São Paulo</h5>
+
+									<p class="card-text">Venha conhecer a terra da garoa.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/Cristo-Redentor.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Rio de Janeiro</h5>
+									<p class="card-text">Venha se encantar nessa cidade
+										maravilhosa.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img
+									src="./imagens usadas/passagens-aereas-curitiba-capa2019-02.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Curitiba</h5>
+									<p class="card-text">A capital ecologica do Brasil está te
+										esperando.</p>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+					<div class="row justify-content-around mt-3">
+
+
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/bahia-2.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Salvador</h5>
+
+									<p class="card-text">Capital da terra de todos os santos.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/istockphoto-1211696001-612x612.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Porto Alegre</h5>
+									<p class="card-text">Uma cidade que leva alegria em seu
+										nome e em seu povo.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 20; height: 100%;">
+								<img src="./imagens usadas/passeio-pampulha-1.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Belo Horinte</h5>
+									<p class="card-text">Se aventure pela Cidade Jardim, a
+										belíssima capital de Minas Gerais.</p>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+					<div class="row justify-content-around mt-3">
+
+
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img
+									src="./imagens usadas/caf5443a-60c8-442a-bca4-ae9afc154fea.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Fortaleza</h5>
+
+									<p class="card-text">Nenhum dia será igual ao outro na
+										ensolarada terra da luz.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/81c35dfac8d803ebda02aca21242a46f.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Recife</h5>
+									<p class="card-text">Explore a Veneza Brasileira.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 20; height: 100%;">
+								<img src="./imagens usadas/florianopolis2.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Florianópolis</h5>
+									<p class="card-text">Desvenda os segredos da ilha da magia
+										nossa saudosa Floripa.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Fim da parte dos destinos nacionais-->
+
+
+
+		</main>
+		<!-- Fim da primeira parte principal -->
+
+		<div class=" bg-gradient"
+			style="height: 15px; background-color: #0f9e57"></div>
+
+		<!-- Inicio da segunda parte principal -->
+
+		<main class=" mt-0 backg_internaci">
+			<div class="bg-gradient " style="height: 100%; width: 100%;"></div>
+
+			<!-- Inicio dos destinos internacionais - -->
+			<div class="container ">
+
+
+
+
+				<div class="container p-2 bg-gradient"
+					style="background-color: #0f9e57">
+
+					<div class="row justify-content-around">
+
+						<h2 style="color: white;">
+							Destinos internacionais
+							<hr>
+						</h2>
+
+						<b>
+							<p align="center" style="color: white;">Os lugares mais belos
+								do mundo também estão por aqui.</p>
+						</b>
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/buenos-aires.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Buenos Aires</h5>
+									<u> <b> <h7 class="card-subtitle">Argentina</h7>
+									</b>
+									</u>
+									<p class="card-text">O país do tango nos oferece uma
+										capital maravilhosa para se visitar.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1 ">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/Montevideo.jpeg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Montevideo</h5>
+									<u> <b> <h7 class="card-subtitle">Uruguai</h7>
+									</b>
+									</u>
+									<p class="card-text">Ótima opção para os amantes de vinho e
+										também para quem gosta de ótimas oportunidades de passeios
+										públicos.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1 ">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/ilha-de-pascoa-estatuas.png"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Ilha de Páscoa</h5>
+									<u> <b> <h7 class="card-subtitle">Chile</h7>
+									</b>
+									</u>
+									<p class="card-text">Além dessas estátuas outra tração
+										legal dessa ilha é a observação das estrelas dessa região.</p>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+					<div class="row justify-content-around mt-3">
+
+
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1 ">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/playa-del-carmen-750x463.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Cancún</h5>
+									<u> <b> <h7 class="card-subtitle">México</h7>
+									</b>
+									</u>
+
+									<p class="card-text">Um verdadeiro paraíso na América
+										central.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/santa-monica-california.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Califórnia</h5>
+									<u> <b> <h7 class="card-subtitle">Estados Unidos</h7>
+									</b>
+									</u>
+									<p class="card-text">Venha conhecer as praias do estado
+										dourado.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1 ">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/O-que-fazer-em-Madrid-4.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Madrid</h5>
+									<u> <b> <h7 class="card-subtitle">Espanha</h7>
+									</b>
+									</u>
+
+									<p class="card-text">Conheça os museus de fama mundial
+										localizados nessa linda cidade da espanha.</p>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+					<div class="row justify-content-around mt-3">
+
+
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1 ">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img
+									src="./imagens usadas/lisboa-capital-portugal-cidade-mais-populosa-pais-5aa29c0aa7796.webp"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Lisboa</h5>
+									<u> <b> <h7 class="card-subtitle">Portugal</h7>
+									</b>
+									</u>
+
+									<p class="card-text">Em 2018 essa cidade foi escolhida como
+										a melhor cidade para se viver. Uma boa alternativa para quem
+										gosta de segurança e tranquilidade.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/estocolmo.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Estolcomo</h5>
+									<u> <b> <h7 class="card-subtitle">Suécia</h7>
+									</b>
+									</u>
+									<p class="card-text">Uma cidade situada em um dos países
+										com a mais alta qualidade de vida e com diversas paisagens
+										lindas pela natureza.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/Imagem-Blog-Jerusalem.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Jerusalém</h5>
+									<u> <b> <h7 class="card-subtitle">Israel</h7>
+									</b>
+									</u>
+
+									<p class="card-text">Capital de Israel e conhecida como
+										terra santa.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="row justify-content-around mt-3">
+
+
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1 ">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/taj-mahal.webp" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Agra</h5>
+									<u> <b> <h7 class="card-subtitle">Índia</h7>
+									</b>
+									</u>
+
+									<p class="card-text">Como não se encantar com esse
+										monumento que se trata de uma homenagem do imperador mongol
+										Shan Jahan sua terceira esposa.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/marrakech_414437158_1000.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Marrakech</h5>
+									<u> <b> <h7 class="card-subtitle">Marrocos</h7>
+									</b>
+									</u>
+									<p class="card-text">Essa linda cidade já foi uma antiga
+										cidade imperial e até os dias atuais ela conta com seus muros
+										que acercava na época.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-8 mt-lg-0 mt-md-0 mt-sm-1 ">
+							<div class="card" style="width: 100%; height: 100%;">
+								<img src="./imagens usadas/toqui.jpeg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Tóquio</h5>
+									<u> <b> <h7 class="card-subtitle">Japão</h7>
+									</b>
+									</u>
+
+									<p class="card-text">Cidade moderna e ao mesmo tempo com
+										muita tradição antepassadas.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim parte dos destinos internacionais-->
+
+
+
+
+
+		</main>
+		<!-- Fim da segunda parte principal do site
+        -->
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Inicio da parte de serviços -->
+		<div class=" pb-5 "
+			style="height: auto; width: 100%; background-color: black;">
+			<hr style="color: orange;">
+			<h3 class="mx-2 bg-gradient py-0" style="color: orange;">Serviços</h3>
+
+			<div
+				class="row text-center justify-content-around align-items-center ">
+
+				<div class="col-3 " style="background-color: black;">
+
+					<img src="./imagens usadas/Seguro viagem.png"
+						class="img-fluid divserv" style="height: 50%; width: 50%;" alt=""
+						srcset="">
+					<h6 style="color: orange;">Seguro Viagem</h6>
+
+				</div>
+				<div class="col-3  " style="background-color: black;">
+					<img src="./imagens usadas/Cambio.png" class="img-fluid divserv"
+						style="height: 50%; width: 50%;" alt="" srcset="">
+					<h6 style="color: orange;">Câmbio</h6>
+
+				</div>
+				<div class="col-3 " style="background-color: black;">
+					<img src="./imagens usadas/Assesoria em vistos.png"
+						class="img-fluid divserv" style="height: 50%; width: 50%;" alt=""
+						srcset="">
+					<h6 style="color: orange;">Assesoria de Vistos</h6>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!-- Fim da parte de serviços -->
+
+
+
+
+
+
+
+
+
+		<!-- Inicio do Roda pé do site -->
+		<Footer class="bg-dark">
+
+			<div class="row justify-content-around justify-content-sm-around "
+				style="height: 20%; width: 100%;">
+				<div class="col-6 col-md-6 col-sm-12 ">
+					<h4 class="text-center mt-1" align="center">Siga-nos!</h4>
+					<br>
+
+					<div class="row justify-content-center  ">
+						<div class="col-3  ">
+							<a href="#"><img
+								src="../Pagina de contato/Imagens_usadas/LogoFacebook.png"
+								class="img-fluid" style="max-height: 40px; max-width: 55px;"
+								alt="" srcset=""></a>
+						</div>
+						<div class="col-3 ">
+
+							<a href="#"><img
+								src="../Pagina de contato/Imagens_usadas/kisspng-instagram-.png"
+								class="img-fluid" style="max-height: 50px; max-width: 75px;"
+								alt="" srcset=""></a>
+						</div>
+						<div class="col-3 ">
+							<a href="#"><img
+								src="../Pagina de contato/Imagens_usadas/twitter.png"
+								class="img-fluid" style="max-height: 50px; max-width: 75px;"
+								alt="" srcset=""></a>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  ">
+
+
+					<div class="row  ">
+						<h4 class=" mt-1 text-center">Formas de pagamento</h4>
+						<div class="col-lg-2 col-md-1 col-sm-2"></div>
+						<div class="col-lg-8 col-md-10 col-sm-8  ">
+
+							<figure>
+								<img src="../Pagina de contato/Imagens_usadas/Sem Título-1.webp"
+									style="max-height: 200px; max-width: 100%;" alt="">
+							</figure>
+						</div>
+						<div class="col-lg-2 col-md-1 col-sm-2 "></div>
+					</div>
+
+
+
+
+				</div>
+
+
+
+			</div>
+
+
+
+		</Footer>
+		<!-- Final do roda pé do site -->
+
+
+
+	</section>
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>
