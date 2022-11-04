@@ -1,0 +1,9 @@
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.datasource.url=jdbc:postgresql://ec2-54-85-56-210.compute-1.amazonaws.com:5432/novos-ares
+spring.datasource.username=qtpzuzwvwowifq
+spring.datasource.password=fac4dcec2ab3569bfabb8027c507d9d261eb8556fe08fb7ee47b708c303758b0
+
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+

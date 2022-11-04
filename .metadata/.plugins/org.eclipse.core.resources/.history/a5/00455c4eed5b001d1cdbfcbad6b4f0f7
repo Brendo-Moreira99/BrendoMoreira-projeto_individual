@@ -1,0 +1,8 @@
+package snippet;
+
+public class Snippet {
+	public static void main(String[] args) {
+		ec2-54-85-56-210.compute-1.amazonaws.com
+	}
+}
+

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Novos Ares - Home</title>
+	<link rel="stylesheet" href="../principal.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+	<section class=" backg_principal">
+<!-- Inicio da navbar -->
+		<header class="container-fluid">
+
+			<nav class="navbar navbar-expand-lg bg-dark rounded-1 fixed-top">
+				<div class="container-fluid ">
+					<a class="navbar-brand border-end " href="#"><img
+						class="img-fluid" src="../imgs/Logo.png"
+						style="height: 95px; width: 100%;" alt="" srcset=""> <br>
+					</a>
+
+					<button class="navbar-toggler navbar-dark" type="button"
+						data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse align-content-end"
+						id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link active efeito"
+								aria-current="page"
+								href="/">Home</a></li>
+							<li class="nav-item"><a class="nav-link efeito"
+								href="/destino">Destinos</a></li>
+							<li class="nav-item dropdown "><a
+								class="nav-link dropdown-toggle efeito " href="#"
+								id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false"> Promoções </a>
+								<ul class="dropdown-menu bg-dark"
+									aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item efeito "
+										href="/casal">Para Casais</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item efeito"
+										href="/familia">Para
+											Famílias</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item efeito"
+										href="/solteiro">Para
+											Solteiros</a></li>
+								</ul></li>
+							<li class="nav-item"><a class="nav-link efeito"
+								href="/contato" tabindex="-1"
+								aria-disabled="true">Contato</a></li>
+						</ul>
+						<form class="d-flex">
+							<input class="form-control me-4 w-75" type="search"
+								placeholder="Procurar no site" aria-label="Procurar">
+							<button class="btn btn-outline-success btn-sm m-1" type="submit">Buscar</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+			<!-- Fim da Navbar -->
+
+		<section class="container bg-gradient ">
+			<div style="height: 110px;"></div>
+
+		<!-- inicio do jubotron -->
+
+			<div class="container ">
+
+				<div class=" p-5 rounded-1 jubotron">
+					<div class="row justify-content-between">
+						<div class="col-lg-8 col-sm-12 p-3 bg-gradient" align="justify">
+							<h1 align="center">Aqui seu sonho se realiza</h1>
+							<br>
+							<p>Conheça nossos destinos e promoções, e embarque com a
+								melhor agência de viajem do Brasil!</p>
+							<p>Temos promoções e os melhores pacotes para você, para seu
+								par ou para sua família.</p>
+							<div class="row  mb-sm-2 align-content-sm-around d-sm-block d-md-flex d-lg-flex">
+								<div class="col-sm-12  col-lg-4 col-md-4">
+									<div class="card" style="width: 20; height: 100%;">
+										<img src="../imgs/Mochilao-America-do-Sul_Machu-Picchu.jpg"
+											class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Solteiros</h5>
+											<h6 class="card-subtitle mb-2 text-muted ">Autoconhecimento</h6>
+											<p class="card-text">Viajar sozinho é uma boa alternativa
+												para autoconhecimento.</p>
+											<div style="text-align: center">
+												<a class="btn btn-sm btn-info border-secondary"
+													href="/solteiro">Saiba
+													mais</a>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<div class="col-sm-12 col-lg-4 col-md-4">
+									<div class="card" style="width: 20; height: 100%;">
+										<img src="../imgs//viagens-para-casal-sem-gastar-muito.jpg"
+											class="img-fluid " alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Casal</h5>
+											<h6 class="card-subtitle mb-2 text-muted ">Apaixonados</h6>
+											<p class="card-text">Nada melhor do que viajar ao lado da
+												sua alma gêmea.</p>
+											<div style="text-align: center">
+												<a class="btn btn-sm btn-info border-secondary"
+													href="/casal">Saiba
+													mais</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-lg-4 col-md-4 ">
+									<div class="card" style="width: 20; height: 100%;">
+										<img src="../imgs/viajar-familia.jpg"
+											class="card-img-top " alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Família</h5>
+											<h6 class="card-subtitle mb-2 text-muted ">Diversão</h6>
+											<p class="card-text">Viva momentos inesqueciveis com quem
+												você mais ama.</p>
+											<div style="text-align: center">
+												<a class="btn btn-sm btn-info border-secondary"
+													href="/familia">Saiba
+													mais</a>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+						<aside class="col-lg-4 col-sm-12 p-4 bg-gradient ">
+							<div>
+								<img src="../imgs/2560px-O_Coqueiro_e_o_Mar.jpg"
+									class=" rounded mt-1" alt="Cinque Terre" width="100%" height="100%">
+								<div>
+									<img src="../imgs/sailing-boat-boat-sail-lake-water-water-sports-leisure-vacations-recovery.jpg"
+										class=" rounded mt-1" alt="" width="100%" height="100%" srcset="">
+								</div>
+								<div>
+									<img src="../imgs/Maldives_Tropics_Coast_Bungalow_Palms_552239_1920x1080.jpg"
+										class=" rounded mt-1" alt="Cinque Terre" width="100%" height="100%">
+
+								</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+
+			<!-- Fim do jubotron -->
+
+			<main class="fundo_carrosel p-1 py-3 mt-3">
+				<h3 class="my-3 " align="center">Conheça alguns de nossos
+					destinos nacionais</h3>
+
+
+				<!-- Carrosel - inicio 1 -->
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+							class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+					</div>
+
+
+					<div class="carousel-inner mt-2 "
+						style="height: 300px; text-align: center; background-color: #95d0b8;">
+						<div class="carousel-item active">
+							<img src="../imgs/o-que-voce-precisa-saber-antes-de-ir-ao-rio-de-janeiro-dani-noce-imagem-destaque-960x625.jpg"
+								class=" card-img-top w-75" alt="..." height="300px">
+							<div class="carousel-caption ">
+								<h5 class="bg-dark bg-gradient text-white">Rio de Janeiro</h5>
+
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="../imgs/10-pontos-turisticos-da-bahia-que-nao-podem-faltar-na-viagem.jpg"
+								class="card-img-top w-75" alt="..." height="300px">
+							<div class="carousel-caption">
+								<h5 class="bg-dark bg-gradient text-white">Bahia</h5>
+
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<img src="../imgs/Imagem-280-x-235-Crédito-Ricardo-Duarte-Agência-RBS.png"
+								class="card-img-top w-75" alt="..." height="300px">
+							<div class="carousel-caption">
+								<h5 class="bg-dark bg-gradient text-white">Santa Catarina</h5>
+
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+				<!-- Fim do carrosel -->
+
+			</main>
+
+			<div style="height: 50px;"></div>
+
+			<!-- Inicio do jubotron  com destinos internacionais-->
+			<div class="p-5 rounded-1 jubotron my-2 mb-4">
+				<h3 class="mb-2" align="center">Aproveite e também venha
+					conhecer nossos destinos internacionais</h3>
+
+				<div class="row justify-content-around align-items-center d-lg-flex d-md-flex d-sm-block">
+					<div class="col-lg-3 col-md-5 col-sm-12 mt-2">
+						<img class="img-fluid" style="height: auto; width: 100%;"
+							src="../imgs/paises-nordicos-suecia.jpg" alt="" srcset="">
+						<p class="text-center">
+							<b>Suécia</b>
+						</p>
+
+					</div>
+					<div class="col-lg-3 col-md-5 col-sm-12 mt-2">
+						<img class="img-fluid" style="height: auto; width: 100%;"
+							src="../imgs/morar-em-portugal.jpg" alt="" srcset="">
+						<p class="text-center">
+							<b>Portugal</b>
+						</p>
+
+					</div>
+					<div class="col-lg-3 col-md-5 col-sm-12 mt-2">
+						<img class="img-fluid" style="height: auto; width: 100%;"
+							src="../imgs/jerusalc3a9m.jpg" alt="" srcset="">
+						<p class="text-center">
+							<b>Israel</b>
+						</p>
+
+					</div>
+					<div class="col-lg-3 col-md-5 col-sm-12 rounded "
+						style="text-align: center; background-color: #0f9e57; color: black; opacity: 0.85;">
+
+						<div class="row ">
+							<div class="col ">
+								<h5 class="mt-2">Desbrave novos países e conheça novas
+									culturas e idiomas</h5>
+							</div>
+
+						</div>
+						<div class="row justify-content-around">
+							<br>
+
+							<p align="justify">Se permita conhecer os lugares mais
+								incríveis do mundo.</p>
+							<hr style="color: orange;">
+							<p align="justify">Vivencie experiências únicas com conforto
+								e segurança que você merece.</p>
+						</div>
+					</div>
+				</div>
+				<!--Fim do inicio do jubotron  com destinos internacionais-->
+		</section>
+
+
+		<!-- Inicio da parte dos serviços -->
+		<div class=" pb-5 " style="height: auto; width: 100%; background-color: black;">
+			<hr style="color: orange;">
+			<h3 class="mx-2 bg-gradient py-0" style="color: orange;">Serviços</h3>
+
+			<div class="row text-center justify-content-around align-items-center ">
+
+				<div class="col-3 " style="background-color: black;">
+
+					<img src="../imgs/Seguro viagem.png" class="img-fluid divserv"
+						style="height: 50%; width: 50%;" alt="" srcset="">
+					<h6 style="color: orange;">Seguro Viagem</h6>
+
+				</div>
+				<div class="col-3  " style="background-color: black;">
+					<img src="../imgs/Cambio.png" class="img-fluid divserv"
+						style="height: 50%; width: 50%;" alt="" srcset="">
+					<h6 style="color: orange;">Câmbio</h6>
+
+				</div>
+				<div class="col-3  " style="background-color: black;">
+					<img src="../imgs/Assesoria em vistos.png" class="img-fluid divserv"
+						style="height: 50%; width: 50%;" alt="" srcset="">
+					<h6 style="color: orange;">Assesoria de Vistos</h6>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!-- Fim da parte dos serviços -->
+
+
+		<!-- inicio do roda pé -->
+
+		<Footer class="bg-dark">
+
+			<div class="row justify-content-around justify-content-sm-around" style="height: 20%; width: 100%;">
+				<div class="col-6 col-md-6 col-sm-12 ">
+					<h4 class="text-center mt-1" align="center">Siga-nos!</h4>
+					<br>
+
+					<div class="row justify-content-center  ">
+						<div class="col-3  ">
+							<a href="#"><img src="../imgs/LogoFacebook.png"
+									class="img-fluid" style="max-height: 40px; max-width: 55px;" alt="" srcset=""></a>
+						</div>
+						<div class="col-3 ">
+
+							<a href="#"><img src="../imgs/kisspng-instagram-.png"
+									class="img-fluid" style="max-height: 50px; max-width: 75px;" alt="" srcset=""></a>
+						</div>
+						<div class="col-3 ">
+							<a href="#"><img src="../imgs/twitter.png" class="img-fluid"
+									style="max-height: 50px; max-width: 75px;" alt="" srcset=""></a>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  ">
+
+
+					<div class="row  ">
+						<h4 class=" mt-1 text-center">Formas de pagamento</h4>
+						<div class="col-lg-2 col-md-1 col-sm-2"></div>
+						<div class="col-lg-8 col-md-10 col-sm-8  ">
+
+							<figure>
+								<img src="../imgs/Sem Título-1.webp"
+									style="max-height: 200px; max-width: 100%;" alt="">
+							</figure>
+						</div>
+						<div class="col-lg-2 col-md-1 col-sm-2 "></div>
+					</div>
+
+				</div>
+			</div>
+		</Footer>
+		<!-- Fim do roda pé do site -->
+
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

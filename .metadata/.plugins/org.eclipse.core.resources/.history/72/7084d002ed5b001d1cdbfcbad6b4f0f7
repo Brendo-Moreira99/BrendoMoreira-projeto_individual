@@ -1,0 +1,8 @@
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.datasource.url=jdbc:postgresql://ec2-3-213-66-35.compute-1.amazonaws.com:5432/d171kj6b92mrj9
+spring.datasource.username=nfyidtrruffnpk
+spring.datasource.password=d575ade3a39d3ce47a3c9e9eaba00f8383a07bcb98caa7ce4d5f2c780f8927ed
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
