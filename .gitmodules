@@ -1,0 +1,3 @@
+[submodule "JavaSpringApp"]
+	path = JavaSpringApp
+	url = https://github.com/Brendo-Moreira99/AppJavaSpring.git
